@@ -1,0 +1,34 @@
+## Не проходят валидацию карты платежной системы МИР
+
+## Precondition:
+Тестовые данные взяты с сайта: [Генаратор карт платежной системы МИР](https://ccgen.datagemba.com/card-generator/mir)
+Номера карт для тестирования:
+* 2201988313074926
+* 2202393178438311
+* 2203712627466084
+* 2202403782221434
+* 2202220806821527
+
+## Environment:
+* macOS 11.4 (20F71)
+* openjdk version "11.0.10" 2021-01-19
+* IntelliJ IDEA Community Edition.app 2021.1.1
+
+## Severity: 
+Critical
+## Priority: 
+High
+
+## Steps: 
+
+1. Открыть проект j-intro 
+2. В поле String number ввести номер карты  2201988313074926
+3. Запустить программу на выполнение
+4. Посмотреть в консоли результат
+
+## Expect result:
+Result is OK
+## Result
+Result is FAIL
+
+![image](https://user-images.githubusercontent.com/53948043/128602318-1358cab1-d0a1-4e70-baf2-b9f06957c7d6.png)
